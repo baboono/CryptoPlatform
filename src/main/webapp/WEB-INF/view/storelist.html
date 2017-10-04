@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Store Details</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Store Details</h1>
+	<table>
+		<tr>
+			<th>ID</th>
+			<th>NAME</th>
+			<th>STREET ADDRESS</th>
+			<th>SUBURB</th>
+			<th>POSTCODE</th>
+		</tr>
+		<tr th:each="store : ${stores}">
+			<td th:text="${store.storeId}"></td>
+			<td th:text="${store.storeName}"></td>
+			<td th:text="${store.storeStreetAddress}"></td>
+			<td th:text="${store.storeSuburb}"></td>
+			<td th:text="${store.storePostcode}"></td>
+			<td><a th:href="@{'/editstore/' + ${store.storeId}}">Edit</a></td>
+			<td><a th:href="@{'/deletestore/' + ${store.storeId}}">Delete</a></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<p>
+					<a href="/loadstore">Add another store?</a>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+
+</body>
+</html>

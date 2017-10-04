@@ -1,0 +1,10 @@
+com\boostIT\domain\MarketScannerFactory$1.class
+com\boostIT\service\StoreManagementService.class
+com\boostIT\controllers\AdvancedController.class
+com\boostIT\repo\StoreRepository.class
+com\boostIT\service\StoreManagementServiceImpl.class
+com\boostIT\PlatformApplication.class
+com\boostIT\domain\BitstampTickerDemoImpl$1.class
+com\boostIT\configuration\WebConfig.class
+com\boostIT\domain\SingleMarketScanner$1.class
+com\initialisers\AppInitializer.class

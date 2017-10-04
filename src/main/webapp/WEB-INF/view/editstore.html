@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Store Management</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Store Management</h1>
+	<form action="#" th:action="@{/updatestore}" th:object="${store}"
+		method="post">
+		<table>
+			<tr>
+				<td>Store Id:</td>
+				<td><input type="text" th:field="*{storeId}"
+					readonly="readonly" /></td>
+			</tr>
+			<tr>
+				<td>Store Name:</td>
+				<td><input type="text" th:field="*{storeName}" /></td>
+			</tr>
+			<tr>
+				<td>Store Street Address :</td>
+				<td><input type="text" th:field="*{storeStreetAddress}" /></td>
+			</tr>
+			<tr>
+				<td>Store Suburb:</td>
+				<td><input type="text" th:field="*{storeSuburb}" /></td>
+			</tr>
+			<tr>
+				<td>Store PostCode:</td>
+				<td><input type="text" th:field="*{storePostcode}" /></td>
+			</tr>
+			<tr align="center">
+				<td><input type="submit" value="Submit" /></td>
+				<td><input type="reset" value="Reset" /></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
